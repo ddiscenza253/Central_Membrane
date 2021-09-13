@@ -4,7 +4,7 @@ void CMreco(){
   TFile *recoFile=TFile::Open("G4sPHENIX_rcc_g4svtx_eval.root","READ");
   TTree *cTree=(TTree*)recoFile->Get("ntp_cluster");
 
-  TFile *patFile=TFile::Open("~/sphenix/toys/cmpattern/cmDistHitsTree_Event0.root","READ");
+  TFile *patFile=TFile::Open("./cmDistHitsTree_Event0.root","READ");
   TTree *pTree=(TTree*)patFile->Get("tree");
 
   
